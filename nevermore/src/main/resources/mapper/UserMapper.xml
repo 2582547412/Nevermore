@@ -2,15 +2,15 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.sys.mapper.UserMapper">
-    <resultMap id="userMap" type="com.example.sys.entity.User">
+<mapper namespace="com.sf.nevermore.sys.mapper.UserMapper">
+    <resultMap id="userMap" type="com.sf.nevermore.sys.entity.User">
         <id property="userId" column="user_id"/>
         <result property="username" column="username"/>
         <result property="password" column="password"/>
-        <collection property="roles" ofType="com.example.sys.entity.Role">
+        <collection property="roles" ofType="com.sf.nevermore.sys.entity.Role">
             <id property="roleId" column="role_id"/>
             <result property="roleName" column="role_name"/>
-            <collection property="permissions" ofType="com.example.sys.entity.Permission">
+            <collection property="permissions" ofType="com.sf.nevermore.sys.entity.Permission">
                 <id property="permissionId" column="permission_id"/>
                 <result property="permissionName" column="permission_name"/>
             </collection>
