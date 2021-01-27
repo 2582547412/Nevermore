@@ -71,11 +71,11 @@ public class userController {
         return "login";
     }
 
-    //访问login时跳到login.jsp
-    @RequestMapping("/login")
-    public String login() {
-        return "login";
-    }
+//    //访问login时跳到login.jsp
+//    @RequestMapping("/login")
+//    public String login() {
+//        return "login";
+//    }
     @RequestMapping("/add")
     public String add() {
         return "add";

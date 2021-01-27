@@ -73,9 +73,9 @@ public class ShiroConfig {
         bean.setSecurityManager(manager);
         //设置登录页面
         //可以写路由也可以写jsp页面的访问路径
-        bean.setLoginUrl("/login");
+        //bean.setLoginUrl("/login");
         //设置登录成功跳转的页面
-        bean.setSuccessUrl("/index");
+        //bean.setSuccessUrl("/index");
         //设置未授权跳转的页面
         bean.setUnauthorizedUrl("/unauthorized");
         //定义过滤器
